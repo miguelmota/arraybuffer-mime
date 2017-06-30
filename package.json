@@ -1,0 +1,47 @@
+{
+  "name": "arraybuffer-mime",
+  "version": "0.0.1",
+  "description": "Prepends fixed length byte to indicate mime type of ArrayBuffer.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/tape/bin/tape test/*.js",
+    "build": "browserify index.js -o dist/arraybuffer-mime.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miguelmota/arraybuffer-mime"
+  },
+  "keywords": [
+    "arraybuffer",
+    "mime",
+    "concat",
+    "typedarray",
+    "blob"
+  ],
+  "author": {
+    "name": "Miguel Mota",
+    "email": "hello@miguelmota.com",
+    "url": "https://miguelmota.com/"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/miguelmota/arraybuffer-mime/blob/master/LICENSE.md"
+  },
+  "bugs": {
+    "url": "https://github.com/miguelmota/arraybuffer-mime/issues"
+  },
+  "homepage": "https://github.com/miguelmota/arraybuffer-mime",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "tape": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "arraybuffer-concat": "0.0.1"
+  }
+}
