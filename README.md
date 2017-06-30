@@ -1,6 +1,6 @@
 # arraybuffer-mime
 
-> Prepends fixed length byte to indicate mime type of ArrayBuffer.
+> Prepends fixed length byte array to indicate mime type of the ArrayBuffer.
 
 # Install
 
@@ -19,13 +19,14 @@ const {
 } = require('arraybuffer-mime')
 
 // "some image"
-const ab = new Uint8Array(1)
-ab[0] = 1
+const uint8 = new Uint8Array(1)
+uint8[0] = 1
+const ab = uint8.buffer
 
 const mime = 'image/png'
-const abWithMime = arrayBufferWithMime(ab.buffer, mime)
+const abWithMime = arrayBufferWithMime(ab, mime)
 
-const {mime, arrayBuffer} = arrayBufferMimeDecouple(abm)
+const {mime, arrayBuffer} = arrayBufferMimeDecouple(abWithMime)
 
 console.log(mime) // "image/png"
 console.log(arrayBuffer) // ArrayBuffer

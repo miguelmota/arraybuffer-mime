@@ -1,7 +1,7 @@
 {
   "name": "arraybuffer-mime",
-  "version": "0.0.1",
-  "description": "Prepends fixed length byte to indicate mime type of ArrayBuffer.",
+  "version": "0.0.2",
+  "description": "Prepends fixed length byte array to indicate mime type of the ArrayBuffer.",
   "main": "index.js",
   "directories": {
     "test": "test"
