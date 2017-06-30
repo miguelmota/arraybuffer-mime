@@ -16,7 +16,7 @@ Basic example:
 const {
   arrayBufferWithMime,
   arrayBufferMimeDecouple
-} = require('arraybuffer-mime');
+} = require('arraybuffer-mime')
 
 // "some image"
 const ab = new Uint8Array(1)
@@ -37,7 +37,7 @@ Example demonstrating sending a binary file over Websockets:
 const {
   arrayBufferWithMime,
   arrayBufferMimeDecouple
-} = require('arraybuffer-mime');
+} = require('arraybuffer-mime')
 
 const ws = new WebSocket(`ws://localhost:8080/`)
 ws.binaryType = 'arraybuffer'
