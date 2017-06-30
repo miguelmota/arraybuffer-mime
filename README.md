@@ -10,7 +10,7 @@ npm install arraybuffer-mime
 
 # Usage
 
-Basic example
+Basic example:
 
 ```javascript
 const {
@@ -18,7 +18,7 @@ const {
   arrayBufferMimeDecouple
 } = require('arraybuffer-mime');
 
-// can be typeArray contaning image data
+// "some image"
 const ab = new Uint8Array(1)
 ab[0] = 1
 
@@ -31,7 +31,7 @@ console.log(mime) // "image/png"
 console.log(arrayBuffer) // ArrayBuffer
 ```
 
-Example demonstration sending a binary file over Websockets
+Example demonstrating sending a binary file over Websockets:
 
 ```javascript
 const {
