@@ -34,10 +34,9 @@ test('arraybuffer with mime', function (t) {
   var ab3 = new Uint8Array(1)
   ab3[0] = 1
 
-  var abm3 = arrayBufferWithMime(ab3.buffer, 'idontexist')
+  var abm3 = arrayBufferWithMime(ab3.buffer, 'text/javascript')
   var abo3 = arrayBufferMimeDecouple(abm3)
 
-  t.equal(abo3.mime, '');
+  t.equal(abo3.mime, 'text/javascript');
   t.deepEqual(abo3.arrayBuffer, ab3.buffer);
-  console.log(abo3.arrayBuffer)
 });
