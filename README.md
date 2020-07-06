@@ -1,14 +1,14 @@
 # arraybuffer-mime
 
-> Prepends fixed length byte array to indicate mime type of the ArrayBuffer.
+> Prepends byte array to indicate mime type of the ArrayBuffer.
 
-# Install
+## Install
 
 ```bash
 npm install arraybuffer-mime
 ```
 
-# Usage
+## Getting started
 
 Basic example:
 
@@ -69,12 +69,12 @@ ws.on('message', (event) => {
 })
 ```
 
-# Test
+## Test
 
 ```bash
 npm test
 ```
 
-# License
+## License
 
-MIT
+[MIT](LICENSE)

@@ -1,7 +1,7 @@
 {
   "name": "arraybuffer-mime",
-  "version": "0.0.5",
-  "description": "Prepends fixed length byte array to indicate mime type of the ArrayBuffer.",
+  "version": "1.0.0",
+  "description": "Prepends byte array to indicate mime type of the ArrayBuffer.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -28,7 +28,7 @@
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/miguelmota/arraybuffer-mime/blob/master/LICENSE.md"
+    "url": "https://github.com/miguelmota/arraybuffer-mime/blob/master/LICENSE"
   },
   "bugs": {
     "url": "https://github.com/miguelmota/arraybuffer-mime/issues"
